@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discreta</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="bootstrap.min.css" rel="stylesheet"/>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="./sweetalert.min.js"></script>
+</head>
+
+<body>
+    <ul class="nav nav-tabs bg-dark border-dark justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link color-light bg-success border-success active" style="color: #fff" id="home-tab"
+                data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home"
+                aria-selected="true">
+                Combinaciones
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link bg-danger border-danger" style="color: #fff" id="profile-tab" data-bs-toggle="tab"
+                data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                Permutaciones
+            </button>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane bg-success fade show active" style="height: 100vh" id="home" role="tabpanel"
+            aria-labelledby="home-tab">
+            <div id='stars'></div>
+<div id='stars2'></div>
+<div id='stars3'></div>
+
+            <div class="container justify-content-center pt-5">
+                <div class="row">
+                    <div class="col-6">
+                        <input class="form-control border-danger border-3 form-control-lg"id="valor_combinacion" type="text" placeholder="Palabra"
+                    aria-label=".form-control-lg example" />
+                    </div>
+                    <div class="col-6">
+                        <input class="form-control border-danger border-3 form-control-lg"id="valor_combinacion_n" type="text" placeholder="N"
+                    aria-label=".form-control-lg example" />
+                
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-danger mt-5"id="r-c" type="button">Ver Resultado</button>
+                        <button class="btn btn-success border-light mt-5"id="limpiar_c" type="button">Limpiar Listado</button>
+                      </div>
+                </div>
+                    <div class="mb-3 pt-5">
+                    <textarea class="form-control border-danger border-3" id="respuesta_combinacion"
+                        rows="10"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade bg-danger" id="profile" role="tabpanel" style="height: 100vh"
+            aria-labelledby="profile-tab">
+            <div id='stars'></div>
+            <div id='stars2'></div>
+            <div id='stars3'></div>
+            
+            <div class="container justify-content-center pt-5">
+                <div class="row">
+                    <div class="col-12">
+                        <input class="form-control border-success border-3 form-control-lg" id="valor_permutacion" type="text" placeholder="Palabras Separadas Por Un Espacio"
+                    aria-label=".form-control-lg example" />
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-success mt-5"id="r-p" type="button">Ver Resultado</button>
+                        <button class="btn btn-danger border-light mt-5"id="limpiar_p" type="button">Limpiar Listado</button>
+                      </div>
+                </div>
+                    <div class="mb-3 pt-5">
+                    <textarea class="form-control border-success border-3" id="respuesta_permutacion"
+                        rows="10"></textarea>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="./jquery.min.js"></script>
+    <script src="./permutations.js"></script>
+    <script src="./combination.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
